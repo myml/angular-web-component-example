@@ -6,7 +6,8 @@
     "start": "ng serve",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
-    "test": "ng test"
+    "test": "ng test",
+    "analyzer": "ng build --stats-json && webpack-bundle-analyzer dist/m/stats.json"
   },
   "private": true,
   "dependencies": {
@@ -14,12 +15,14 @@
     "@angular/common": "^14.0.0",
     "@angular/compiler": "^14.0.0",
     "@angular/core": "^14.0.0",
+    "@angular/elements": "^14.0.2",
     "@angular/forms": "^14.0.0",
     "@angular/platform-browser": "^14.0.0",
     "@angular/platform-browser-dynamic": "^14.0.0",
     "@angular/router": "^14.0.0",
     "rxjs": "~7.5.0",
     "tslib": "^2.3.0",
+    "webpack-bundle-analyzer": "^4.5.0",
     "zone.js": "~0.11.4"
   },
   "devDependencies": {
